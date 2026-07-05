@@ -1,0 +1,16 @@
+{
+  "name": "distributed-job-scheduler",
+  "version": "1.0.0",
+  "description": "Production-inspired distributed job scheduling platform",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "test": "cd backend && npm test",
+    "migrate": "cd backend && node src/migrate.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
